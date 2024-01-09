@@ -1,0 +1,6 @@
+<router-outlet></router-outlet>
+<span>Raspuns from iubi&#10084;
+-socket: <b>{{responseFromWebSocket$ | async}}</b> </span>
+<br>
+<input type="text" placeholder="Send via websocket" [(ngModel)]="term">
+<button (click)="sendMessage()" >Send</button>
